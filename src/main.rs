@@ -57,9 +57,9 @@ async fn font() -> Result<Response<Body>, String> {
 	Ok(
 		Response::builder()
 			.status(200)
-			.header("content-type", "font/woff2")
+			.header("content-type", "font/ttf")
 			.header("Cache-Control", "public, max-age=1209600, s-maxage=86400")
-			.body(include_bytes!("../static/Inter.var.woff2").as_ref().into())
+			.body(include_bytes!("../static/Outfit-VariableFont_wght.ttf").as_ref().into())
 			.unwrap_or_default(),
 	)
 }
@@ -220,7 +220,7 @@ async fn main() {
 	});
 	app.at("/favicon.ico").get(|_| favicon().boxed());
 	app.at("/logo.png").get(|_| pwa_logo().boxed());
-	app.at("/Inter.var.woff2").get(|_| font().boxed());
+	app.at("/Outfit-VariableFont_wght.ttf").get(|_| font().boxed());
 	app.at("/touch-icon-iphone.png").get(|_| iphone_logo().boxed());
 	app.at("/apple-touch-icon.png").get(|_| iphone_logo().boxed());
 	app

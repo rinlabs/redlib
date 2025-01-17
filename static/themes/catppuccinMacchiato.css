@@ -1,0 +1,274 @@
+.catppuccinMacchiato {
+    --accent: #f5bde6; /* pink */
+    --green: #a6da95; /* green */
+    --text: #cad3f5; /* text */
+    --foreground: #181926; /* crust */
+    --background: #181926; /* crust */
+    --outside: #181926; /* crust */
+    --post: #24273a; /* base */
+    --panel-border: 1px solid #24273a; /* base */
+    --highlighted: #363a4f; /* surface0 */
+    --visited: #6e738d; /* overlay0 */
+    --shadow: 0 0 0 transparent;
+    --nsfw: #c6a0f6; /* mauve */
+    --admin: #ee99a0; /* maroon */
+
+    --crust: #181926; /* crust */
+    --base: #24273a; /* base */
+}
+
+.catppuccinMacchiato .line {
+    background: var(--base);
+}
+
+.catppuccinMacchiato .comment_score {
+    background: var(--base);
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px #1f2131,
+        -2px -2px 10px #292d43;
+    /* base */
+}
+
+.catppuccinMacchiato .post {
+    border-radius: 30px;
+    box-shadow: 5px 5px 15px #1f2131,
+        -5px -5px 15px #292d43;
+    /* base */
+    transition-property: background, box-shadow;
+}
+
+.catppuccinMacchiato .post:hover {
+    box-shadow: none;
+}
+
+.catppuccinMacchiato #commentSortSelect {
+    background: var(--base);
+}
+
+.catppuccinMacchiato #search {
+    background: var(--base);
+}
+
+.catppuccinMacchiato #sort_submit {
+    color: var(--base);
+}
+
+.catppuccinMacchiato #top {
+    background: var(--crust);
+}
+
+.catppuccinMacchiato #sidebar,
+.catppuccinMacchiato #subreddit,
+.catppuccinMacchiato #user {
+    border-radius: 30px;
+}
+
+.catppuccinMacchiato .subscribe,
+.catppuccinMacchiato .unsubscribe,
+.catppuccinMacchiato .filter,
+.catppuccinMacchiato .unfilter {
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    border-radius: 30px;
+    box-shadow: 3px 3px 15px #d0a1c4,
+        -3px -3px 15px #ffd9ff;
+    /* accent */
+    transition-property: background, box-shadow, color;
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    transition-behavior: normal;
+    border: 1px solid var(--accent);
+}
+
+.catppuccinMacchiato .subscribe:hover,
+.catppuccinMacchiato .unsubscribe:hover,
+.catppuccinMacchiato .filter:hover,
+.catppuccinMacchiato .unfilter:hover {
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    border-radius: 30px;
+    background: var(--crust);
+    box-shadow: none;
+    color: var(--accent);
+}
+
+.catppuccinMacchiato select,
+.catppuccinMacchiato #search {
+    border: none;
+    padding: 0 10px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.catppuccinMacchiato #search {
+    border-right: none;
+    flex-grow: 1;
+}
+
+.catppuccinMacchiato #inside {
+    border-right: none;
+}
+
+.catppuccinMacchiato input[type="submit"],
+.catppuccinMacchiato button.submit {
+    border: 0;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.catppuccinMacchiato .commentQuery {
+    border-radius: 10px 10px 10px 10px !important;
+}
+
+.catppuccinMacchiato #feeds {
+    border-radius: 10px;
+}
+
+.catppuccinMacchiato :focus-visible {
+    outline: 1px solid var(--accent);
+}
+
+.catppuccinMacchiato #sort_options+#timeframe:not(#search_sort > #timeframe) {
+    border-radius: 0px 0px 0px 0px;
+}
+
+.catppuccinMacchiato #listing_options+#sort_select {
+    margin-left: 10px;
+    border-radius: 10px 0px 0px 10px;
+    background: var(--base);
+}
+
+.catppuccinMacchiato #search_sort {
+    border-radius: 10px;
+}
+
+.catppuccinMacchiato #search_subreddits {
+    border-radius: 10px;
+}
+
+.catppuccinMacchiato .post_thumbnail {
+    border-radius: 10px;
+}
+
+.catppuccinMacchiato .author_flair {
+    border-radius: 10px;
+}
+
+.catppuccinMacchiato .prefs {
+    border-radius: 30px;
+}
+
+.catppuccinMacchiato .prefs select {
+    border-radius: 10px;
+}
+
+.catppuccinMacchiato #save {
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    border-radius: 30px;
+    background: var(--accent);
+    box-shadow: 3px 3px 15px #d0a1c4,
+            -3px -3px 15px #ffd9ff;
+        /* accent */
+    transition-property: background, box-shadow, color;
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    transition-behavior: normal;
+    border: 1px solid var(--accent);
+}
+
+.catppuccinMacchiato #save:hover {
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    border-radius: 30px;
+    background: var(--base);
+    box-shadow: none;
+    color: var(--accent);
+}
+
+.catppuccinMacchiato .post_flair {
+    border-radius: 10px;
+}
+
+.catppuccinMacchiato .nsfw {
+    border-radius: 10px;
+}
+
+.catppuccinMacchiato .spoiler {
+    border-radius: 10px;
+}
+
+.catppuccinMacchiato #sort_options,
+.catppuccinMacchiato #listing_options {
+    border-radius: 10px;
+    background: var(--base);
+}
+
+.catppuccinMacchiato #user_icon,
+.catppuccinMacchiato #sub_icon {
+    border: 1px solid var(--accent);
+}
+
+.catppuccinMacchiato #user_subscription form {
+    word-wrap: normal;
+}
+
+.catppuccinMacchiato #search_subreddits {
+    border-radius: 10px;
+}
+
+.catppuccinMacchiato #timeframe {
+    background: var(--highlighted);
+    margin: 0px 0px 0px 2px;
+    transition-property: color;
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    transition-behavior: normal;
+}
+
+.catppuccinMacchiato .search_widget_divider_box>* {
+    background: var(--crust);
+}
+
+.catppuccinMacchiato #inside {
+    background: var(--base);
+    border-radius: 0px 10px 10px 0px;
+}
+
+.catppuccinMacchiato #sort_options+#timeframe {
+    margin-left: 0px;
+    border-radius: 0px 0px 0px 0px;
+    background: var(--base);
+}
+
+.catppuccinMacchiato #inside+#sort_options {
+    margin-left: 4px;
+    border-radius: 10px 0px 0px 10px;
+    background: var(--base);
+}
+
+.catppuccinMacchiato #sort_options:hover,
+.catppuccinMacchiato #timeframe:hover,
+.catppuccinMacchiato #listing_options:hover {
+    color: var(--accent);
+}
+
+.catppuccinMacchiato .post_media_content {
+    border-radius: 10px;
+}
+
+.catppuccinMacchiato #inside+.submit {
+    background: var(--crust);
+}
+
+.catppuccinMacchiato .gallery img {
+    border-radius: 10px;
+}
